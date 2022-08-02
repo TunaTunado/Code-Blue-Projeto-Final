@@ -376,6 +376,7 @@ h3 {
 }
 
 
+
 /* SOBRE */
 .about {
     background: #F7F8FA;
@@ -479,15 +480,14 @@ span {
 
 /* Mais Populares */
 .popular {
-    display: flex;
     padding-bottom: 70px;
 }
 
-.popular>.container section {
-    /* display: flex; */
-    gap: 31px;
-    grid-template-columns: 1fr 1fr 1fr;
-}
+/* .popular>.container section {
+    display: flex;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+} */
 
 footer {
     background: #272727;
@@ -571,6 +571,9 @@ footer article:last-child {
     .container {
         max-width: 100%;
         padding: 0 15px;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-between;
     }
 
     /* Topo FIXO! */
@@ -588,9 +591,7 @@ footer article:last-child {
     }
 
     .hidden {
-        flex-wrap: wrap;
         display: flex;
-        justify-content: space-between;
     }
 
     .hidden-noMobile {
@@ -599,9 +600,10 @@ footer article:last-child {
 
     .banner-mobile {
         display: flex;
-        
+
     }
-    .bgmobile{
+
+    .bgmobile {
         width: 100%;
     }
 
@@ -611,7 +613,7 @@ footer article:last-child {
         gap: 15px;
         padding-left: 0;
     }
-    
+
 
     /* .logo-mobile {
         display: flex;
@@ -646,17 +648,16 @@ footer article:last-child {
         display: none;
     }
 
-    .usuarioMobile{
+    .usuarioMobile {
         display: flex;
         flex-wrap: wrap;
-        
+
     }
 
     /* Parte do conheça nossos produtos */
 
     .discovery {
-        /* background: url(../imagens/bgmobile.png) no-repeat;
-        background-size: 100%; */
+
         display: flex;
         justify-content: center;
         position: relative;
@@ -689,12 +690,18 @@ footer article:last-child {
     }
 
     .grid {
-        flex-flow: column;
-        align-items: center;
+        display: flex;
+       flex-wrap: wrap;
+        justify-content: center;
     }
 
     .grid img {
         align-items: center;
+    }
+
+    .grid a {
+        margin-bottom: 20px;
+
     }
 
     .about .hidden-noMobile {
