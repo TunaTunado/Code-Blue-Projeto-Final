@@ -578,7 +578,7 @@ footer article:last-child {
 
     header {
         /* overflow: hidden; */
-        background: yellow;
+        background: white;
         position: fixed;
         width: 100%;
         left: 0;
