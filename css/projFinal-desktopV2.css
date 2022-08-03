@@ -234,14 +234,15 @@ main {
 
 /* Conheça nossos produtos */
 .discovery {
+    background: url(../imagens/backdesk.jpg) no-repeat;
+    background-size: 100%;
     display: flex;
     justify-content: center;
+    padding: 390px 0;
 }
 
-.discovery {
-    min-height: 780px;
 
-}
+
 
 .discovery>article {
     align-items: center;
@@ -326,7 +327,8 @@ h3 {
     /* Usar flex e flex:wrap pq dai se for adicionando varios itens nao vai ter q ficar alterando o grid */
     display: flex;
     flex-wrap: wrap;
-    filter: drop-shadow(0px 4px 24px rgba(123, 123, 123, 0.15))
+    filter: drop-shadow(0px 4px 24px rgba(123, 123, 123, 0.15));
+    gap: 13px;
 }
 
 .grid a {
@@ -576,6 +578,9 @@ footer article:last-child {
         justify-content: space-between;
     }
 
+
+
+
     /* Topo FIXO! */
 
 
@@ -603,9 +608,9 @@ footer article:last-child {
 
     }
 
-    .bgmobile {
+    /* .bgmobile {
         width: 100%;
-    }
+    } */
 
     header section ul {
         display: flex;
@@ -624,6 +629,10 @@ footer article:last-child {
         cursor: pointer;
         padding-right: 26px;
     }
+
+
+
+
 
     .hamburger {
         border: solid #272727;
@@ -658,16 +667,18 @@ footer article:last-child {
 
     .discovery {
 
+        background: url(../imagens/bgmobile.png) no-repeat;
+        background-size: 100%;
         display: flex;
         justify-content: center;
         position: relative;
         width: 100%;
 
+
     }
 
     .discovery>.banner {
         margin: 0 15px;
-        min-height: 100%;
         padding: 41px 16px 43px;
         position: absolute;
         top: 228px;
@@ -691,8 +702,9 @@ footer article:last-child {
 
     .grid {
         display: flex;
-       flex-wrap: wrap;
+        flex-wrap: wrap;
         justify-content: center;
+
     }
 
     .grid img {
@@ -719,15 +731,15 @@ footer article:last-child {
     }
 
     .about h3 {
-        display: flex;
-        justify-content: flex-start;
+        /* display: flex;
+        justify-content: flex-start; */
         text-align: center;
 
     }
 
     .about h2 {
         display: flex;
-        justify-content: flex-start;
+        justify-content: center;
         margin-bottom: 15px;
         width: 100%;
         text-align: center;
@@ -762,7 +774,7 @@ footer article:last-child {
 
     .about ul li {
         margin-bottom: 4px;
-        ;
+
 
     }
 
@@ -780,6 +792,7 @@ footer article:last-child {
 
     article {
         align-items: center;
+        margin: auto;
     }
 
     .testimonials>.container section {
@@ -811,6 +824,11 @@ footer article:last-child {
         flex-wrap: wrap;
         justify-content: center;
     }
+
+    /* Fazendo o carrossel */
+
+
+
 
     /* FOOTER */
     footer>.container:first-child {
