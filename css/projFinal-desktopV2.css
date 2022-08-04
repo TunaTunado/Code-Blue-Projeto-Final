@@ -169,7 +169,7 @@ header {
     right: 0;
     position: fixed;
     top: 0;
-    z-index: 999;
+    z-index: 5;
 }
 
 header section,
@@ -463,7 +463,6 @@ span {
     color: #1D293F;
     font: 500 22px/29px 'Poppins';
     margin: 22px 18px;
-    max-width: 90%;
 }
 
 .testimonials p {
@@ -477,7 +476,7 @@ span {
 }
 
 .testimonials>.container section {
-    display: grid;
+    display: flex;
     gap: 31px;
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -487,6 +486,7 @@ span {
     border-radius: 6px;
     box-shadow: 0px 4px 24px rgba(139, 167, 178, 0.16);
     padding-bottom: 29px;
+    width: 80%;
 }
 
 
@@ -531,7 +531,7 @@ footer ul {
     margin-bottom: 50px;
     margin-right: 0;
     padding-left: 0;
-    
+
 }
 
 footer ul ul {
@@ -547,10 +547,11 @@ footer li ul li {
     margin-left: 0px;
 }
 
-footer ul li ul{
+footer ul li ul {
     padding: 0;
 }
-footer li{
+
+footer li {
     width: 170px;
     margin-right: 13px;
 }
@@ -593,11 +594,9 @@ footer article:last-child {
 
     /* Começar pelo CONTAINER! */
     .container {
-        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
         padding: 0 15px;
-        flex-wrap: wrap;
-        display: flex;
-        justify-content: space-between;
     }
 
 
@@ -607,28 +606,29 @@ footer article:last-child {
 
 
     header {
-        /* overflow: hidden; */
+        overflow: hidden;
         background: white;
         position: fixed;
-        width: 100%;
+        max-width: 100%;
         left: 0;
         right: 0;
         top: 0;
 
     }
 
+
+
     .hidden {
         display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 
     .hidden-noMobile {
         display: none;
     }
 
-    .banner-mobile {
-        display: flex;
 
-    }
 
     /* .bgmobile {
         width: 100%;
@@ -637,8 +637,11 @@ footer article:last-child {
     header section ul {
         display: flex;
         justify-content: flex-end;
-        gap: 15px;
+        align-items: center;
+        gap: 0px;
+        margin-right: 0;
         padding-left: 0;
+        padding-right: 0;
     }
 
 
@@ -649,11 +652,11 @@ footer article:last-child {
 
     #botao-menu {
         cursor: pointer;
-        padding-right: 26px;
+        display: flex;
+        width: 32px;
+        flex-direction: column;
+        margin-left: 0;
     }
-
-
-
 
 
     .hamburger {
@@ -666,11 +669,13 @@ footer article:last-child {
 
     .item-1 {
         padding-bottom: 5px;
+        display: block;
     }
 
     .item-2,
     .item-3 {
         padding: 5px 0;
+        display: block;
     }
 
     nav,
@@ -679,19 +684,32 @@ footer article:last-child {
         display: none;
     }
 
+    .banner-mobile {
+        max-width: 100%;
+        max-height: 780px;
+    }
+
     .usuarioMobile {
         display: flex;
         flex-wrap: wrap;
+        align-items: center;
+        /* padding-right: 13px; */
+        gap: 15px;
 
     }
 
     /* Parte do conheça nossos produtos */
 
     .discovery {
-        display: flex;
-        justify-content: center;
+        display: block;
+        /* justify-content: center;
         position: relative;
-        width: 100%;
+        max-width: 100%; */
+
+        height: 780px;
+        max-width: 100%;
+
+        justify-content: center;
 
 
     }
@@ -717,6 +735,10 @@ footer article:last-child {
 
     .discovery a {
         font: 400 21px/24px 'Roboto';
+    }
+
+    .products {
+        padding: 50px 0 72px;
     }
 
     .grid {
@@ -813,11 +835,11 @@ footer article:last-child {
     }
 
     .about figure {
-        width: 100%;
+        max-width: 100%;
     }
 
     .about img {
-        width: 100%;
+        max-width: 100%;
     }
 
     article {
@@ -827,12 +849,13 @@ footer article:last-child {
 
     .testimonials>.container section {
         gap: 22px;
-        overflow: hidden;
+        overflow: scroll;
     }
 
     .testimonials h4 {
-        font: 500 18px/24px 'Poppins';
+        font: 500 22px/26px 'Poppins';
         margin: 0 18px;
+        text-align: center;
 
     }
 
@@ -848,7 +871,7 @@ footer article:last-child {
 
     .cliente {
         padding: 0;
-        width: 267px;
+        min-width: 100%;
         height: 264px;
         display: flex;
         flex-wrap: wrap;
@@ -856,8 +879,6 @@ footer article:last-child {
     }
 
     /* Fazendo o carrossel */
-
-
 
 
     /* FOOTER */
