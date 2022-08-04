@@ -163,6 +163,7 @@ input[type="url"]:placeholder {
 
 /* header */
 header {
+    width: 100%;
     background: #ffffff;
     left: 0;
     right: 0;
@@ -201,6 +202,12 @@ header article ul {
     gap: 25px;
 }
 
+.banner-img {
+    /* position: relative; */
+    width: 100%;
+    max-height: 780px;
+}
+
 /* .logo-mobile{
     display: none;
 } */
@@ -234,14 +241,19 @@ main {
 
 /* Conheça nossos produtos */
 .discovery {
-    background: url(../imagens/backdesk.jpg) no-repeat;
-    background-size: 100%;
+    /* background: center no-repeat; */
+    overflow: hidden;
+    height: 780px;
+    width: 100%;
     display: flex;
     justify-content: center;
-    padding: 390px 0;
+    /* padding: 390px 0; */
 }
 
 
+picture>img {
+    width: 100%;
+}
 
 
 .discovery>article {
@@ -346,7 +358,6 @@ h3 {
     top: -10px;
     transform: translate(0, -5%);
     transition: 1.3s ease all;
-
 }
 
 
@@ -518,7 +529,9 @@ footer ul {
     font: 400 16px/29px 'Poppins';
     margin-top: 44px;
     margin-bottom: 50px;
-    margin-right: -19px;
+    margin-right: 0;
+    padding-left: 0;
+    
 }
 
 footer ul ul {
@@ -531,8 +544,17 @@ footer ul ul {
 
 footer li ul li {
     padding-top: 20px;
-    margin-left: -40px;
+    margin-left: 0px;
 }
+
+footer ul li ul{
+    padding: 0;
+}
+footer li{
+    width: 170px;
+    margin-right: 13px;
+}
+
 
 footer article:last-child {
     color: #5E6E89;
@@ -571,7 +593,7 @@ footer article:last-child {
 
     /* Começar pelo CONTAINER! */
     .container {
-        max-width: 100%;
+        width: 100%;
         padding: 0 15px;
         flex-wrap: wrap;
         display: flex;
@@ -666,9 +688,6 @@ footer article:last-child {
     /* Parte do conheça nossos produtos */
 
     .discovery {
-
-        background: url(../imagens/bgmobile.png) no-repeat;
-        background-size: 100%;
         display: flex;
         justify-content: center;
         position: relative;
@@ -679,7 +698,7 @@ footer article:last-child {
 
     .discovery>.banner {
         margin: 0 15px;
-        padding: 41px 16px 43px;
+        /* padding: 41px 16px 43px; */
         position: absolute;
         top: 228px;
     }
@@ -714,6 +733,17 @@ footer article:last-child {
     .grid a {
         margin-bottom: 20px;
 
+    }
+
+    .grid a:hover {
+        /* box-shadow: 0 0 11px rgba(33,33,33,.2); */
+        transition: all .8s ease;
+        filter: none;
+        box-shadow: 0px 0px 11px rgba(33, 33, 33, .2);
+        position: relative;
+        top: 0px;
+        transform: none;
+        transition: 1.3s ease all;
     }
 
     .about .hidden-noMobile {
