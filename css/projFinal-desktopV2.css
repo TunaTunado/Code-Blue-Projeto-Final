@@ -436,6 +436,9 @@ h3 {
     transform: translate(0, 0);
     transition: 1s ease all;
 }
+#ver-mais, #ver-menos{
+    display: none;
+}
 
 
 
@@ -554,6 +557,7 @@ span {
 footer {
     background: #272727;
     padding: 60px 0 0;
+    min-width: 100%;
 }
 
 footer>.container:first-child {
@@ -704,7 +708,7 @@ footer article:last-child {
         display: flex;
         width: 32px;
         flex-direction: column;
-        margin-left: 0;
+        margin-left: 30px;
     }
 
 
@@ -744,6 +748,7 @@ footer article:last-child {
         align-items: center;
         /* padding-right: 13px; */
         gap: 15px;
+        margin-right: 26px;
 
     }
 
@@ -1033,5 +1038,10 @@ footer article:last-child {
         padding-top: 20px;
         margin-left: 0px;
     }
+    footer li:nth-child(1){order: 0;}
+    footer li:nth-child(2){order:3;}
+    footer li>:nth-child(3){order:2;}
+
+    
 
 }
