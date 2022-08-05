@@ -884,6 +884,7 @@ footer article:last-child {
         transform: translate(0, 0);
         transition: 1s ease all;
     }
+    #ver-mais{display:flex}
 
     .about .hidden-noMobile {
         display: none;
