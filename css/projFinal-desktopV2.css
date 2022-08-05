@@ -295,6 +295,28 @@ footer img {
     width: fit-content;
 }
 
+.discovery>.products .container>a {
+    color: white;
+    display: flex;
+    font: 500 21px/24px 'Roboto';
+    padding: 8px 44px;
+    position: relative;
+    z-index: 9;
+    border-radius: 4px;
+    width: fit-content;
+}
+
+.vitrine {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.vitrine figure {
+    background: rgba(247, 248, 250, .4);
+}
+
 .products,
 .popular {
     padding: 90px 0 125px;
@@ -339,8 +361,10 @@ h3 {
     /* Usar flex e flex:wrap pq dai se for adicionando varios itens nao vai ter q ficar alterando o grid */
     display: flex;
     flex-wrap: wrap;
-    filter: drop-shadow(0px 4px 24px rgba(123, 123, 123, 0.15));
+    filter: drop-shadow(0px 4px 24px rgba(123, 123, 123, 0.2));
     gap: 13px;
+    width: 1110px;
+    margin: auto;
 }
 
 .grid a {
@@ -362,7 +386,7 @@ h3 {
 
 
 .grid img {
-    background: rgb(238, 238, 238);
+    background: rgba(238, 238, 238, .0);
 }
 
 .grid article {
@@ -386,6 +410,31 @@ h3 {
     font: 500 20px/28px 'Roboto';
     letter-spacing: -0.9px;
     justify-content: flex-end;
+}
+
+.vitrine article {
+    background: #fff;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 10px 26px 16px;
+    position: relative;
+    margin-bottom: 26px;
+}
+
+.vitrine div {
+    position: relative;
+    min-height: 230px;
+    min-width: 255px;
+}
+
+.vitrine div>a {
+    display: block;
+    box-shadow: 0px 0px 24px 1px rgb(123 123 123 / 15%);
+    min-height: 230px;
+    min-width: 255px;
+    transform: translate(0, 0);
+    transition: 1s ease all;
 }
 
 
@@ -741,12 +790,48 @@ footer article:last-child {
         padding: 50px 0 72px;
     }
 
-    .grid {
+    /* .products > section {
+        max-height: 1140px;
+        overflow: hidden;
+    } */
+
+    .products .container>a {
+        color: white;
         display: flex;
-        flex-wrap: wrap;
+        font: 500 21px/24px 'Roboto';
+        position: relative;
+        z-index: 5;
+        background: #56B280;
+        padding: 8px 44px;
+        border-radius: 4px;
+        width: fit-content;
+    }
+
+    #ver-menos {
+        display: none;
+    }
+
+    .products .container:last-child {
+        display: flex;
         justify-content: center;
+        margin-top: 55px;
+    }
+
+    .products .container {
+        display: block;
 
     }
+
+    .grid {
+        display: block;
+        width: auto;
+        justify-content: center;
+        margin: 0 15px;
+
+
+    }
+
+
 
     .grid img {
         align-items: center;
@@ -754,7 +839,8 @@ footer article:last-child {
 
     .grid a {
         margin-bottom: 20px;
-
+        display: block;
+        /* box-shadow: 0px 0px 11px rgba(33, 33, 33, .2); */
     }
 
     .grid a:hover {
@@ -766,6 +852,32 @@ footer article:last-child {
         top: 0px;
         transform: none;
         transition: 1.3s ease all;
+    }
+
+    .vitrine {
+        display: block;
+        width: 100%;
+        max-height: 1140px;
+        overflow: hidden;
+    }
+    .grid>.vitrine-mais-menos{
+        max-height: 2600px;
+        overflow: visible;
+    } 
+
+    .vitrine div figure {
+        display: flex;
+        justify-content: center;
+    }
+
+    .vitrine div>a {
+        display: block;
+        box-shadow: 0px 0px 19px 1px rgb(123 123 123 / 13%);
+        /* filter: drop-shadow(0px 2.5551px 15.3306px rgba(123, 123, 123, 0.15)); */
+        min-height: 230px;
+        min-width: 255px;
+        transform: translate(0, 0);
+        transition: 1s ease all;
     }
 
     .about .hidden-noMobile {
@@ -884,12 +996,22 @@ footer article:last-child {
     /* FOOTER */
     footer>.container:first-child {
         border-top: 1.5px solid #FFFFFF;
-        display: flex;
+        display: block;
         flex-wrap: wrap;
         justify-content: space-between;
         padding: 0 0;
     }
 
+    footer>.container:first-child p {
+
+        width: 100%;
+    }
+
+    footer section>article:first-child {
+        max-width: 100%;
+        margin: 0 0;
+        margin-left: 15px;
+    }
 
     footer ul {
         align-items: left;
