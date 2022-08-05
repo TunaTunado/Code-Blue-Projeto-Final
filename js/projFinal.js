@@ -1,3 +1,16 @@
+$(document).ready(function(){
+
+  $("#ver-mais").click(function() {
+    $("#mostrar-mais").addClass("vitrine-mais-menos");
+    $("#ver-mais").hide();
+    $("#ver-menos").show();
+  });
+  $("#ver-menos").click(function() {
+    $("#mostrar-mais").removeClass("vitrine-mais-menos");
+    $("#ver-mais").show();
+    $("#ver-menos").hide();
+  });
+  });
 // Quando scroll rolar, começar minha função
 window.onscroll = function() {myFunction()};
 
@@ -20,4 +33,5 @@ function myFunction() {
     $('#menuescondido').removeClass('hidden');
 });
 
-}
+
+};
