@@ -157,8 +157,12 @@ input[type="url"]:placeholder {
 /*FIM DO RESET TOP!*/
 
 .container {
-    max-width: 1100px;
+    max-width: 1111px;
     margin: 0 auto;
+}
+
+.container-produtos {
+    width: 1111px;
 }
 
 /* header */
@@ -169,7 +173,7 @@ header {
     right: 0;
     position: fixed;
     top: 0;
-    z-index: 5;
+    z-index: 7;
 }
 
 header section,
@@ -186,7 +190,7 @@ header section {
 }
 
 header nav ul {
-    gap: 6px;
+    gap: 6px
 }
 
 header nav a {
@@ -199,23 +203,20 @@ header nav a {
 }
 
 header article ul {
-    gap: 25px;
+    gap: 25px
 }
 
 .banner-img {
-    /* position: relative; */
     width: 100%;
     max-height: 780px;
 }
 
-/* .logo-mobile{
-    display: none;
-} */
+
 
 /* AREA DE TESTE PARA ALTERAR COISAS NO TOPO */
 
 .flechinha {
-    display: inline-block;
+    display: inline-block
 }
 
 i {
@@ -236,23 +237,20 @@ i {
 }
 
 main {
-    position: relative;
+    position: relative
 }
 
 /* Conheça nossos produtos */
 .discovery {
-    /* background: center no-repeat; */
     overflow: hidden;
     height: 780px;
     width: 100%;
     display: flex;
     justify-content: center;
-    /* padding: 390px 0; */
 }
 
-
 picture>img {
-    width: 100%;
+    width: 100%
 }
 
 
@@ -266,7 +264,6 @@ picture>img {
     justify-content: center;
     min-height: 349px;
     max-width: 730px;
-
     position: absolute;
     top: 222px;
 }
@@ -274,7 +271,7 @@ picture>img {
 .discovery>article img,
 .testimonials img,
 footer img {
-    width: fit-content;
+    width: fit-content
 }
 
 .discovery>article h4 {
@@ -301,7 +298,7 @@ footer img {
     font: 500 21px/24px 'Roboto';
     padding: 8px 44px;
     position: relative;
-    z-index: 9;
+    z-index: 3;
     border-radius: 4px;
     width: fit-content;
 }
@@ -316,7 +313,19 @@ footer img {
 .vitrine figure {
     background: rgba(247, 248, 250, .4);
 }
+/* Produtos */
 
+html {
+    scroll-behavior: smooth;
+}
+
+/* Aqui temp products h2, h3, popular h2 e h3 pq usam o mesmo código, dai nao precisa repetir */
+.products h2,
+.products h3,
+.popular h2,
+.popular h3 {
+    text-align: center;
+}
 .products,
 .popular {
     padding: 90px 0 125px;
@@ -325,20 +334,8 @@ footer img {
 .products section article:first-child {
     margin-bottom: 60px;
 }
-
-
-/* Produtos */
-
-/* Aqui temp products h2, h3, popular h2 e h3 pq usam o mesmo código, dai nao precisa repetir */
-html {
-    scroll-behavior: smooth;
-}
-
-.products h2,
-.products h3,
-.popular h2,
-.popular h3 {
-    text-align: center;
+.products  article > h3{
+    margin-bottom: 60px;
 }
 
 h2,
@@ -374,7 +371,6 @@ h3 {
 }
 
 .grid a:hover {
-    /* box-shadow: 0 0 11px rgba(33,33,33,.2); */
     transition: all .8s ease;
     filter: drop-shadow(0px 34px 74px rgba(123, 123, 123, 0.2));
     box-shadow: 0px 0px 11px rgba(33, 33, 33, .2);
@@ -436,7 +432,9 @@ h3 {
     transform: translate(0, 0);
     transition: 1s ease all;
 }
-#ver-mais, #ver-menos{
+
+#ver-mais,
+#ver-menos {
     display: none;
 }
 
@@ -650,13 +648,10 @@ footer article:last-child {
         max-width: 100%;
         margin: 0 auto;
         padding: 0 15px;
+        z-index: 2;
     }
 
-
-
-
     /* Topo FIXO! */
-
 
     header {
         overflow: hidden;
@@ -666,10 +661,7 @@ footer article:last-child {
         left: 0;
         right: 0;
         top: 0;
-
     }
-
-
 
     .hidden {
         display: flex;
@@ -681,60 +673,156 @@ footer article:last-child {
         display: none;
     }
 
-
-
-    /* .bgmobile {
-        width: 100%;
-    } */
-
     header section ul {
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        gap: 0px;
+        gap: 15px;
         margin-right: 0;
         padding-left: 0;
         padding-right: 0;
     }
 
 
-    /* .logo-mobile {
-        display: flex;
-    } */
 
+    /* Hamburguinho delicia que ta dando dor de cabeça */
 
     #botao-menu {
         cursor: pointer;
         display: flex;
         width: 32px;
         flex-direction: column;
-        margin-left: 30px;
+        margin-left: 15px;
+        margin-right: 15px;
     }
-
 
     .hamburger {
         border: solid #272727;
-        border-width: 2px 16px;
+        border-width: 1.5px 16px;
         content: "";
         display: block;
         position: absolute;
     }
 
+    .menu-hamburger {
+        top: 12%;
+        transition: 1.3s ease all;
+        position: fixed;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .menu-hamburger ul a,
+    .menu-hamburger li a {
+        font: 400 24px/29px 'Roboto';
+    }
+
+    .menu-hamburger ul {
+        justify-content: left;
+        padding: 0;
+        margin-left: 12%;
+        gap: 20px;
+    }
+
+    .menu-hamburger ul li a {
+        display: inline-block;
+    }
+
     .item-1 {
-        padding-bottom: 5px;
+        padding-bottom: 4px;
         display: block;
     }
 
     .item-2,
     .item-3 {
-        padding: 5px 0;
+        padding: 4px 0;
         display: block;
+    }
+
+    /* Aqui vamos fazer o tracinho do cima girar */
+    .fechar-menu .item-1 {
+        padding: 0px;
+        transform: rotate(-45deg);
+    }
+
+    /* Dai vamos precisar fazer o tracinho de baixo girar p cruzar com o de cima */
+    .fechar-menu .item-2 {
+        margin-left: 2px;
+        padding: 0px;
+        transform: rotate(45deg);
+    }
+
+    /* Qdo ativar o abrir menu o tracinho do meio deve sumir */
+    .fechar-menu div:nth-child(3) .hamburger {
+        display: none;
+    }
+
+    .abrir-menu {
+        display: none;
+    }
+
+    .abrir-menu {
+
+        border: none;
+        position: relative;
+        top: 0;
+        padding: 10px 0 0 25px;
+    }
+
+    #menu2 {
+        margin-left: 22%;
+
+    }
+
+    .abrir-menu>li a {
+        display: flex;
+        margin: 5px 0;
+        justify-content: flex-start;
+    }
+
+    .abrir-menu a {
+        padding: 5px 0;
     }
 
     nav,
     .logo-desk,
     .banner {
         display: none;
+    }
+
+    nav>ul>li:first-child>a::before {
+        content: url(../imagens/setinha-baixo.svg);
+        transition: .5s ease all;
+        margin-left: -13%;
+    }
+
+    .abrir::before {
+        transform: rotate(-180deg);
+    }
+
+
+    nav {
+        display: block;
+        background: white;
+        left: 0;
+        right: 0;
+        position: absolute;
+        z-index: 1;
+        top: -150px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 13px;
+        padding: 20px 60px;
+    }
+
+    nav a {
+        font: 400 24px/28px 'Roboto';
+        justify-content: flex-start;
+        padding: 0 3px;
     }
 
     .banner-mobile {
@@ -746,9 +834,8 @@ footer article:last-child {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        /* padding-right: 13px; */
         gap: 15px;
-        margin-right: 26px;
+        margin-right: 11px;
 
     }
 
@@ -756,21 +843,13 @@ footer article:last-child {
 
     .discovery {
         display: block;
-        /* justify-content: center;
-        position: relative;
-        max-width: 100%; */
-
         height: 780px;
         max-width: 100%;
-
         justify-content: center;
-
-
     }
 
     .discovery>.banner {
         margin: 0 15px;
-        /* padding: 41px 16px 43px; */
         position: absolute;
         top: 228px;
     }
@@ -795,17 +874,12 @@ footer article:last-child {
         padding: 50px 0 72px;
     }
 
-    /* .products > section {
-        max-height: 1140px;
-        overflow: hidden;
-    } */
-
     .products .container>a {
         color: white;
         display: flex;
         font: 500 21px/24px 'Roboto';
         position: relative;
-        z-index: 5;
+        z-index: 6;
         background: #56B280;
         padding: 8px 44px;
         border-radius: 4px;
@@ -832,11 +906,7 @@ footer article:last-child {
         width: auto;
         justify-content: center;
         margin: 0 15px;
-
-
     }
-
-
 
     .grid img {
         align-items: center;
@@ -845,11 +915,10 @@ footer article:last-child {
     .grid a {
         margin-bottom: 20px;
         display: block;
-        /* box-shadow: 0px 0px 11px rgba(33, 33, 33, .2); */
+
     }
 
     .grid a:hover {
-        /* box-shadow: 0 0 11px rgba(33,33,33,.2); */
         transition: all .8s ease;
         filter: none;
         box-shadow: 0px 0px 11px rgba(33, 33, 33, .2);
@@ -865,10 +934,11 @@ footer article:last-child {
         max-height: 1140px;
         overflow: hidden;
     }
-    .grid>.vitrine-mais-menos{
+
+    .grid>.vitrine-mais-menos {
         max-height: 2600px;
         overflow: visible;
-    } 
+    }
 
     .vitrine div figure {
         display: flex;
@@ -878,13 +948,11 @@ footer article:last-child {
     .vitrine div>a {
         display: block;
         box-shadow: 0px 0px 19px 1px rgb(123 123 123 / 13%);
-        /* filter: drop-shadow(0px 2.5551px 15.3306px rgba(123, 123, 123, 0.15)); */
         min-height: 230px;
         min-width: 255px;
         transform: translate(0, 0);
         transition: 1s ease all;
     }
-    #ver-mais{display:flex}
 
     .about .hidden-noMobile {
         display: none;
@@ -896,13 +964,22 @@ footer article:last-child {
         margin-left: 25%;
     }
 
+    #see-more {
+        background: #56B280;
+        border-radius: 4px;
+        color: #ffffff;
+        display: flex;
+        font: 500 21px/24px 'Roboto';
+        padding: 8px 44px;
+        width: fit-content;
+        margin: 7px auto 63px;
+    }
+
     .about figure {
         margin-top: 0;
     }
 
     .about h3 {
-        /* display: flex;
-        justify-content: flex-start; */
         text-align: center;
 
     }
@@ -922,13 +999,6 @@ footer article:last-child {
         margin-right: 10px;
     }
 
-    /* .checkside {
-        background: url("/imagens/checkzinho.png");
-
-        width: 14px;
-        height: 14px;
-    } */
-
     .checkside::before {
         content: url("/Imagens/checkzinho.png");
         background: url("/imagens/checkzinho.png");
@@ -944,8 +1014,6 @@ footer article:last-child {
 
     .about ul li {
         margin-bottom: 4px;
-
-
     }
 
     .about section:first-child {
@@ -978,8 +1046,8 @@ footer article:last-child {
     }
 
     .testimonials p {
-        font: 400 14px/17px Helvetica;
-        margin-top: 0;
+        font: 400 16px/19px Helvetica;
+        margin-top: 3px;
         margin-bottom: 15px;
     }
 
@@ -989,14 +1057,29 @@ footer article:last-child {
 
     .cliente {
         padding: 0;
-        min-width: 100%;
+        min-width: 77%;
         height: 264px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        flex-direction: column;
     }
 
-    /* Fazendo o carrossel */
+    #ver-mais {
+        display: flex;
+
+    }
+
+    #popular {
+        padding: 0;
+        margin-top: 34px;
+    }
+
+    .popular h2,
+    .popular h3 {
+        padding: 0 15px;
+    }
+
 
 
     /* FOOTER */
@@ -1039,10 +1122,16 @@ footer article:last-child {
         padding-top: 20px;
         margin-left: 0px;
     }
-    footer li:nth-child(1){order: 0;}
-    footer li:nth-child(2){order:3;}
-    footer li>:nth-child(3){order:2;}
 
-    
+    footer li:nth-child(1) {
+        order: 0;
+    }
 
+    footer li:nth-child(2) {
+        order: 3;
+    }
+
+    footer li>:nth-child(3) {
+        order: 2;
+    }
 }
