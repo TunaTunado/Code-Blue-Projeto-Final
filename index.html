@@ -24,8 +24,43 @@
     <!-- header -->
     <header>
         <!-- Topo com menu Hamburger -->
+        <nav class="hidden">
+            <ul>
+                <li>
+                    <a href="#." id="abrir-menu">
+                        Discovery
+                    </a>
+                    <ul class="abrir-menu" id="menu2">
+                        <li>
+                            <a href="#products">
+                                Products
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#testimonials">
+                                Testimonials
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#popular">
+                                Popular
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#about">
+                        About
+                    </a>
+                </li>
+                <li>
+                    <a href="#.">
+                        Contact Us
+                    </a>
+                </li>
+            </ul>
+        </nav>
         <section class="container hidden">
-
             <div id="botao-menu">
                 <div class="item-1">
                     <span class="hamburger"></span>
@@ -37,9 +72,6 @@
                     <span class="hamburger"></span>
                 </div>
             </div>
-
-
-
             <div class="logo-mobile">
                 <h1>
                     <figure>
@@ -49,6 +81,7 @@
                     </figure>
                 </h1>
             </div>
+
             <div class="usuarioMobile">
                 <ul>
                     <li>
@@ -79,7 +112,7 @@
                     </li>
 
 
-                    <li><a href="#">Products</a></li>
+                    <li><a href="#">About</a></li>
                     <li><a href="#">Contact us</a></li>
                 </ul>
             </nav>
@@ -100,8 +133,8 @@
 
     <!-- Inicio do conteudo -->
     <main>
-
-        <section class="discovery">
+        <!-- Temos q usar o id para poder fazer menus irem até essa parte no clique. -->
+        <section class="discovery" id="discovery">
 
             <!-- Imagem de fundo do banner de cima -->
             <section class="banner banner-img">
@@ -126,24 +159,6 @@
             </article>
         </section>
 
-        <!-- <section class="discovery" id="discovery"> -->
-
-        <!-- discovery text -->
-        <!-- <article class="banner">
-                <img src="images/hero-title.png" alt="Apresentação">
-                <h2>
-                    The nature candle
-                </h2>
-                <h4>
-                    All handmade with natural soy wax, Candleaf is a companion for all your pleasure moments.
-                </h4>
-                <p>
-                    <a href="#products" class="button-home">Discovery our collection</a>
-                </p>
-            </article>
-
-        </section> -->
-
         <!-- Sessão dos produtos -->
         <section class="products" id="products">
             <!-- <section class="container"> -->
@@ -156,12 +171,12 @@
                 </h3>
             </article>
 
-            <article class="grid" >
+            <article class="grid">
                 <section class="vitrine" id="mostrar-mais">
                     <div>
                         <a href="#">
                             <figure>
-                                <img src="imagens/image 1.png" alt="Spiced Mint">
+                                <img src="imagens/image 1.png" alt="Imagem da Vela Spiced Mint">
                             </figure>
                             <article class="tag">
                                 <p>Spiced Mint</p>
@@ -173,7 +188,7 @@
 
                         <a href="#">
                             <figure>
-                                <img src="imagens/image 2.png" alt="Sweet Straweberry">
+                                <img src="imagens/image 2.png" alt="Imagem da Vela Sweet Straweberry">
                             </figure>
                             <article class="tag">
                                 <p>Sweet Straweberry</p>
@@ -185,7 +200,7 @@
 
                         <a href="#">
                             <figure>
-                                <img src="imagens/image 3.png" alt="Cool Blueberries">
+                                <img src="imagens/image 3.png" alt="Imagem da Vela Cool Blueberries">
                             </figure>
                             <article class="tag">
                                 <p>Cool Blueberries</p>
@@ -197,7 +212,7 @@
                         <a href="#">
                             <figure>
 
-                                <img src="imagens/image 4.png" alt="Juicy Lemon">
+                                <img src="imagens/image 4.png" alt="Imagem da Vela Juicy Lemon">
                             </figure>
                             <article class="tag">
                                 <p>Juicy Lemon</p>
@@ -208,7 +223,7 @@
                     <div>
                         <a href="#">
                             <figure>
-                                <img src="imagens/image 5.png" alt="Spiced Mint">
+                                <img src="imagens/image 5.png" alt="Imagem da Vela Fresh Orange">
                             </figure>
                             <article class="tag">
                                 <p>Fresh Orange</p>
@@ -219,7 +234,7 @@
                     <div>
                         <a href="#">
                             <figure>
-                                <img src="imagens/image 6.png" alt="Spiced Mint">
+                                <img src="imagens/image 6.png" alt="Imagem da Vela Fragrant Cinnamon">
                             </figure>
                             <article class="tag">
                                 <p>Fragrant Cinnamon</p>
@@ -230,7 +245,7 @@
                     <div>
                         <a href="#">
                             <figure>
-                                <img src="imagens/image 7.png" alt="Spiced Mint">
+                                <img src="imagens/image 7.png" alt="Imagem da Vela Summer Cherries">
                             </figure>
                             <article class="tag">
                                 <p>Summer Cherries</p>
@@ -241,7 +256,7 @@
                     <div>
                         <a href="#">
                             <figure>
-                                <img src="imagens/image 8.png" alt="Spiced Mint">
+                                <img src="imagens/image 8.png" alt="Imagem da Vela Clean Lavander">
                             </figure>
                             <article>
                                 <p>Clean Lavander</p>
@@ -263,7 +278,7 @@
         </section>
 
         <!-- Sessão sobre -->
-        <section class="about hidden-noMobile">
+        <section class="about hidden-noMobile" id="about">
 
             <section class="container">
 
@@ -302,7 +317,7 @@
         </section>
 
         <!-- Sessão sobre MOBILE-->
-        <section class="about hidden">
+        <section class="about hidden" id="about" a>
 
             <section class="container">
 
@@ -356,7 +371,7 @@
 
         </section>
 
-        <article class="testimonials">
+        <article class="testimonials" id="testimonials">
 
             <section class="container">
 
@@ -396,7 +411,7 @@
 
                         <article>
                             <h4>
-                                “Raccomended for everyone”
+                                “Recomended for everyone”
                             </h4>
                             <p>
                                 Edoardo
@@ -428,18 +443,18 @@
 
         </article>
 
-        <section class="popular">
+        <section class="popular" id="popular">
             <section class="container" id="popular">
                 <article>
-                    <h2>Popular</h2>
-                    <h3>Our top selling product that you may like</h3>
+                    <h2>Products</h2>
+                    <h3>Order it for you or for your beloved ones</h3>
                 </article>
                 <article class="grid">
                     <section class="vitrine">
                         <div>
                             <a href="#">
                                 <figure>
-                                    <img src="imagens/image 1.png" alt="Spiced Mint">
+                                    <img src="imagens/image 1.png" alt="Imagem da Vela Spiced Mint">
                                 </figure>
                                 <article>
                                     <p>Spiced Mint</p>
@@ -450,7 +465,7 @@
                         <div>
                             <a href="#">
                                 <figure>
-                                    <img src="imagens/image 2.png" alt="Sweet Straweberry">
+                                    <img src="imagens/image 2.png" alt="Imagem da Vela Sweet Straweberry">
                                 </figure>
                                 <article>
                                     <p>Sweet Straweberry</p>
@@ -461,7 +476,7 @@
                         <div>
                             <a href="#">
                                 <figure>
-                                    <img src="imagens/image 3.png" alt="Cool Blueberries">
+                                    <img src="imagens/image 3.png" alt="Imagem da Vela Cool Blueberries">
                                 </figure>
                                 <article>
                                     <p>Cool Blueberries</p>
@@ -472,7 +487,7 @@
                         <div>
                             <a href="#">
                                 <figure>
-                                    <img src="imagens/image 4.png" alt="Juicy Lemon">
+                                    <img src="imagens/image 4.png" alt="Imagem da Vela Juicy Lemon">
                                 </figure>
                                 <article class="price">
                                     <p>Juicy Lemon</p>
@@ -480,9 +495,12 @@
                                 </article>
                             </a>
                         </div>
+
                     </section>
                 </article>
-
+                <a class="hidden" id="see-more" href="#">
+                    See More
+                </a>
             </section>
 
         </section>
