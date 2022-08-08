@@ -161,9 +161,7 @@ input[type="url"]:placeholder {
     margin: 0 auto;
 }
 
-.container-produtos {
-    width: 1111px;
-}
+.container-produtos {width: 1111px}
 
 /* header */
 header {
@@ -189,9 +187,7 @@ header section {
     justify-content: space-between;
 }
 
-header nav ul {
-    gap: 6px
-}
+header nav ul {gap: 6px}
 
 header nav a {
     color: #272727;
@@ -202,22 +198,16 @@ header nav a {
     width: 130px;
 }
 
-header article ul {
-    gap: 25px
-}
+header article ul {gap: 25px}
 
 .banner-img {
     width: 100%;
     max-height: 780px;
 }
 
-
-
 /* AREA DE TESTE PARA ALTERAR COISAS NO TOPO */
 
-.flechinha {
-    display: inline-block
-}
+.flechinha {display: inline-block}
 
 i {
     margin-bottom: 1px;
@@ -236,9 +226,7 @@ i {
     -webkit-transform: rotate(45deg);
 }
 
-main {
-    position: relative
-}
+main {position: relative}
 
 /* Conheça nossos produtos */
 .discovery {
@@ -313,6 +301,7 @@ footer img {
 .vitrine figure {
     background: rgba(247, 248, 250, .4);
 }
+
 /* Produtos */
 
 html {
@@ -326,17 +315,16 @@ html {
 .popular h3 {
     text-align: center;
 }
+
 .products,
 .popular {
     padding: 90px 0 125px;
 }
 
-.products section article:first-child {
-    margin-bottom: 60px;
+.products section article:first-child {margin-bottom: 60px
 }
-.products  article > h3{
-    margin-bottom: 60px;
-}
+
+.products article>h3 {margin-bottom: 60px}
 
 h2,
 .popular h2 {
@@ -354,7 +342,6 @@ h3 {
 }
 
 .grid {
-
     /* Usar flex e flex:wrap pq dai se for adicionando varios itens nao vai ter q ficar alterando o grid */
     display: flex;
     flex-wrap: wrap;
@@ -381,13 +368,9 @@ h3 {
 }
 
 
-.grid img {
-    background: rgba(238, 238, 238, .0);
-}
+.grid img {background: rgba(238, 238, 238, .0)}
 
-.grid article {
-    padding: 10px 26px 16px;
-}
+.grid article {padding: 10px 26px 16px}
 
 .grid article p {
     align-items: center;
@@ -413,14 +396,14 @@ h3 {
     left: 0;
     right: 0;
     bottom: 0;
-    padding: 10px 26px 16px;
-    position: relative;
-    margin-bottom: 26px;
+    padding: 0px 26px 6px;
+    position: absolute;
+    margin-bottom: 0px;
 }
 
 .vitrine div {
     position: relative;
-    min-height: 230px;
+    min-height: 198px;
     min-width: 255px;
 }
 
@@ -437,8 +420,6 @@ h3 {
 #ver-menos {
     display: none;
 }
-
-
 
 /* SOBRE */
 .about {
@@ -464,12 +445,9 @@ h3 {
     margin-bottom: 38px;
 }
 
-.about figure {
-    margin-top: 13px;
-}
+.about figure {margin-top: 13px}
 
-.about ul li {
-    font: 400 16px/29px 'Poppins';
+.about ul li {font: 400 16px/29px 'Poppins'
 }
 
 /* .about ul li::before {
@@ -477,23 +455,17 @@ h3 {
 
 } */
 
-.about ul {
-    padding-left: 0;
-}
+.about ul {padding-left: 0}
 
 .about a {
     font: 400;
     margin-top: 68px;
 }
 
-span {
-    font-weight: 500;
-}
+span {font-weight: 500}
 
 /* TESTEMUNHOS */
-.testimonials {
-    padding: 90px 0 125px
-}
+.testimonials {padding: 90px 0 125px}
 
 .testimonials h2,
 .testimonials h3,
@@ -539,18 +511,10 @@ span {
     width: 80%;
 }
 
-
-
 /* Mais Populares */
 .popular {
     padding-bottom: 70px;
 }
-
-/* .popular>.container section {
-    display: flex;
-    gap: 30px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-} */
 
 footer {
     background: #272727;
@@ -568,12 +532,10 @@ footer>.container:first-child {
 footer>.container:first-child p {
     color: #FFFFFF;
     font: 400 16px/23px 'Poppins';
-    /* margin-top: 21px; */
     width: 265px;
 }
 
 footer ul {
-
     justify-content: space-between;
     color: #56B280;
     display: flex;
@@ -582,7 +544,6 @@ footer ul {
     margin-bottom: 50px;
     margin-right: 0;
     padding-left: 0;
-
 }
 
 footer ul ul {
@@ -598,9 +559,7 @@ footer li ul li {
     margin-left: 0px;
 }
 
-footer ul li ul {
-    padding: 0;
-}
+footer ul li ul {padding: 0}
 
 footer li {
     width: 170px;
@@ -631,13 +590,9 @@ footer article:last-child {
     font: 400 16px/28px 'Poppins';
 }
 
-.footerBranco span {
-    font-weight: 500;
-}
+.footerBranco span {font-weight: 500}
 
-.hidden {
-    display: none;
-}
+.hidden {display: none}
 
 /* Entrando no MOBILE */
 /* Fazendo com que menor que ou igual 768 fique tela de celular */
@@ -649,15 +604,15 @@ footer article:last-child {
         margin: 0 auto;
         padding: 0 15px;
         z-index: 2;
+        overflow: visible;
     }
 
     /* Topo FIXO! */
-
     header {
         overflow: hidden;
         background: white;
         position: fixed;
-        max-width: 100%;
+        width: 100%;
         left: 0;
         right: 0;
         top: 0;
@@ -683,10 +638,7 @@ footer article:last-child {
         padding-right: 0;
     }
 
-
-
     /* Hamburguinho delicia que ta dando dor de cabeça */
-
     #botao-menu {
         cursor: pointer;
         display: flex;
@@ -705,12 +657,14 @@ footer article:last-child {
     }
 
     .menu-hamburger {
-        top: 12%;
+        top: 0;
         transition: 1.3s ease all;
-        position: fixed;
+        position: relative;
         display: flex;
         justify-content: flex-start;
     }
+
+    .hidden2 {z-index: -2}
 
     .menu-hamburger ul a,
     .menu-hamburger li a {
@@ -724,9 +678,7 @@ footer article:last-child {
         gap: 20px;
     }
 
-    .menu-hamburger ul li a {
-        display: inline-block;
-    }
+    .menu-hamburger ul li a {display: inline-block}
 
     .item-1 {
         padding-bottom: 4px;
@@ -753,26 +705,18 @@ footer article:last-child {
     }
 
     /* Qdo ativar o abrir menu o tracinho do meio deve sumir */
-    .fechar-menu div:nth-child(3) .hamburger {
-        display: none;
-    }
+    .fechar-menu div:nth-child(3) .hamburger {display: none}
+
+    .abrir-menu {display: none}
 
     .abrir-menu {
-        display: none;
-    }
-
-    .abrir-menu {
-
         border: none;
         position: relative;
         top: 0;
         padding: 10px 0 0 25px;
     }
 
-    #menu2 {
-        margin-left: 22%;
-
-    }
+    #menu2 {margin-left: 22%}
 
     .abrir-menu>li a {
         display: flex;
@@ -780,9 +724,7 @@ footer article:last-child {
         justify-content: flex-start;
     }
 
-    .abrir-menu a {
-        padding: 5px 0;
-    }
+    .abrir-menu a {padding: 5px 0}
 
     nav,
     .logo-desk,
@@ -796,9 +738,7 @@ footer article:last-child {
         margin-left: -13%;
     }
 
-    .abrir::before {
-        transform: rotate(-180deg);
-    }
+    .abrir::before {transform: rotate(-180deg)}
 
 
     nav {
@@ -836,15 +776,14 @@ footer article:last-child {
         align-items: center;
         gap: 15px;
         margin-right: 11px;
-
     }
 
     /* Parte do conheça nossos produtos */
 
     .discovery {
-        display: block;
+        display: flex;
         height: 780px;
-        max-width: 100%;
+        width: 100%;
         justify-content: center;
     }
 
@@ -866,13 +805,9 @@ footer article:last-child {
         width: 100%;
     }
 
-    .discovery a {
-        font: 400 21px/24px 'Roboto';
-    }
+    .discovery a {font: 400 21px/24px 'Roboto'}
 
-    .products {
-        padding: 50px 0 72px;
-    }
+    .products {padding: 62px 0 72px}
 
     .products .container>a {
         color: white;
@@ -886,9 +821,7 @@ footer article:last-child {
         width: fit-content;
     }
 
-    #ver-menos {
-        display: none;
-    }
+    #ver-menos {display: none}
 
     .products .container:last-child {
         display: flex;
@@ -896,10 +829,7 @@ footer article:last-child {
         margin-top: 55px;
     }
 
-    .products .container {
-        display: block;
-
-    }
+    .products .container {display: block}
 
     .grid {
         display: block;
@@ -908,14 +838,11 @@ footer article:last-child {
         margin: 0 15px;
     }
 
-    .grid img {
-        align-items: center;
-    }
+    .grid img {align-items: center}
 
     .grid a {
         margin-bottom: 20px;
         display: block;
-
     }
 
     .grid a:hover {
@@ -931,7 +858,7 @@ footer article:last-child {
     .vitrine {
         display: block;
         width: 100%;
-        max-height: 1140px;
+        max-height: 793px;
         overflow: hidden;
     }
 
@@ -948,7 +875,7 @@ footer article:last-child {
     .vitrine div>a {
         display: block;
         box-shadow: 0px 0px 19px 1px rgb(123 123 123 / 13%);
-        min-height: 230px;
+        min-height: 170px;
         min-width: 255px;
         transform: translate(0, 0);
         transition: 1s ease all;
@@ -975,14 +902,9 @@ footer article:last-child {
         margin: 7px auto 63px;
     }
 
-    .about figure {
-        margin-top: 0;
-    }
+    .about figure {margin-top: 0}
 
-    .about h3 {
-        text-align: center;
-
-    }
+    .about h3 {text-align: center}
 
     .about h2 {
         display: flex;
@@ -990,15 +912,12 @@ footer article:last-child {
         margin-bottom: 15px;
         width: 100%;
         text-align: center;
-
     }
-
     #check {
         width: 14px;
         height: 14px;
         margin-right: 10px;
     }
-
     .checkside::before {
         content: url("/Imagens/checkzinho.png");
         background: url("/imagens/checkzinho.png");
@@ -1012,13 +931,9 @@ footer article:last-child {
         margin-top: 0;
     }
 
-    .about ul li {
-        margin-bottom: 4px;
-    }
+    .about ul li {margin-bottom: 4px}
 
-    .about section:first-child {
-        flex-wrap: wrap;
-    }
+    .about section:first-child {flex-wrap: wrap}
 
     .about figure {
         max-width: 100%;
@@ -1042,7 +957,6 @@ footer article:last-child {
         font: 500 22px/26px 'Poppins';
         margin: 0 18px;
         text-align: center;
-
     }
 
     .testimonials p {
@@ -1065,10 +979,7 @@ footer article:last-child {
         flex-direction: column;
     }
 
-    #ver-mais {
-        display: flex;
-
-    }
+    #ver-mais {display: flex}
 
     #popular {
         padding: 0;
@@ -1080,8 +991,6 @@ footer article:last-child {
         padding: 0 15px;
     }
 
-
-
     /* FOOTER */
     footer>.container:first-child {
         border-top: 1.5px solid #FFFFFF;
@@ -1090,18 +999,12 @@ footer article:last-child {
         justify-content: space-between;
         padding: 0 0;
     }
-
-    footer>.container:first-child p {
-
-        width: 100%;
-    }
-
+    footer>.container:first-child p {width: 100%}
     footer section>article:first-child {
         max-width: 100%;
         margin: 0 0;
         margin-left: 15px;
     }
-
     footer ul {
         align-items: left;
         display: grid;
@@ -1112,26 +1015,12 @@ footer article:last-child {
         padding-top: 0;
         padding-bottom: 0;
     }
-
-    footer ul ul {
-        padding-left: 0;
-    }
-
-
+    footer ul ul {padding-left: 0}
     footer li ul li {
         padding-top: 20px;
         margin-left: 0px;
     }
-
-    footer li:nth-child(1) {
-        order: 0;
-    }
-
-    footer li:nth-child(2) {
-        order: 3;
-    }
-
-    footer li>:nth-child(3) {
-        order: 2;
-    }
+    footer li:nth-child(1) {order: 0}
+    footer li:nth-child(2) {order: 3}
+    footer li>:nth-child(3) {order: 2}
 }
