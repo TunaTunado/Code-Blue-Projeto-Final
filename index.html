@@ -19,12 +19,44 @@
 </head>
 
 <body>
-
-
     <!-- header -->
     <header>
         <!-- Topo com menu Hamburger -->
-        <nav class="hidden">
+        <section class="container hidden">
+            <div id="botao-menu">
+                <div class="item-1">
+                    <span class="hamburger"></span>
+                </div>
+                <div class="item-2">
+                    <span class="hamburger"></span>
+                </div>
+                <div class="item-3">
+                    <span class="hamburger"></span>
+                </div>
+            </div>
+            <div class="logo-mobile">
+                <h1>
+                    <figure>
+                        <a href="#">
+                            <img class="logo" src="imagens/logo.png" alt="Logo da empresa Candleaf">
+                        </a>
+                    </figure>
+                </h1>
+            </div>
+
+            <div class="usuarioMobile">
+                <ul>
+                    <li>
+                        <a href="#"><img src="imagens/perfil.png" alt="Icone do perfil do usuario"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="imagens/carrinho.png" alt="Icone do carrinho de compras"></a>
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+        <nav class="hidden hidden2">
             <ul>
                 <li>
                     <a href="#." id="abrir-menu">
@@ -60,40 +92,6 @@
                 </li>
             </ul>
         </nav>
-        <section class="container hidden">
-            <div id="botao-menu">
-                <div class="item-1">
-                    <span class="hamburger"></span>
-                </div>
-                <div class="item-2">
-                    <span class="hamburger"></span>
-                </div>
-                <div class="item-3">
-                    <span class="hamburger"></span>
-                </div>
-            </div>
-            <div class="logo-mobile">
-                <h1>
-                    <figure>
-                        <a href="#">
-                            <img class="logo" src="imagens/logo.png" alt="Logo da empresa Candleaf">
-                        </a>
-                    </figure>
-                </h1>
-            </div>
-
-            <div class="usuarioMobile">
-                <ul>
-                    <li>
-                        <a href="#"><img src="imagens/perfil.png" alt="Icone do perfil do usuario"></a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="imagens/carrinho.png" alt="Icone do carrinho de compras"></a>
-                    </li>
-                </ul>
-            </div>
-
-        </section>
 
         <section class="container hidden-noMobile">
             <!-- Logo dentro do topo-->
@@ -269,12 +267,9 @@
             <!-- Na section abaixo ficarão os botões de veja mais e veja menos -->
             <section class="container">
                 <a href="#." id="ver-mais">See more</a>
-                <a href="#." id="ver-menos">See less</a>
+                <a href="#products" id="ver-menos">See less</a>
 
             </section>
-
-            <!-- </section> -->
-
         </section>
 
         <!-- Sessão sobre -->
@@ -366,15 +361,10 @@
                 <figure class="hidden-noMobile">
                     <img src="imagens/velas.png" alt="About Candleaf">
                 </figure>
-
             </section>
-
         </section>
-
         <article class="testimonials" id="testimonials">
-
             <section class="container">
-
                 <article>
                     <h2>
                         Testimonials
@@ -383,16 +373,12 @@
                         Some quotes from our happy customers
                     </h3>
                 </article>
-
                 <section>
-
-
                     <article class="cliente">
                         <figure>
                             <img src="imagens/luisa.png" alt="Foto da Luisa">
                             <img src="imagens/4,5 estrelas.png" alt="Avaliação 4,5 estrelas">
                         </figure>
-
                         <article>
                             <h4>
                                 “I love it! No more air fresheners”
@@ -402,13 +388,11 @@
                             </p>
                         </article>
                     </article>
-
                     <article class="cliente">
                         <figure>
                             <img src="imagens/edoardo.png" alt="Foto do Edoardo">
                             <img src="imagens/5 estrelas.png" alt="Avaliação 5 estrelas">
                         </figure>
-
                         <article>
                             <h4>
                                 “Recomended for everyone”
@@ -417,15 +401,12 @@
                                 Edoardo
                             </p>
                         </article>
-
                     </article>
-
                     <article class="cliente">
                         <figure>
                             <img src="imagens/Mart.png" alt="Foto da Mart">
                             <img src="imagens/4,5 estrelas.png" alt="Avaliação 4,5 estrelas">
                         </figure>
-
                         <article>
                             <h4>
                                 “Looks very natural, the smell is awesome”
@@ -434,13 +415,9 @@
                                 Mart
                             </p>
                         </article>
-
                     </article>
-
                 </section>
-
             </section>
-
         </article>
 
         <section class="popular" id="popular">
@@ -495,14 +472,12 @@
                                 </article>
                             </a>
                         </div>
-
                     </section>
                 </article>
                 <a class="hidden" id="see-more" href="#">
                     See More
                 </a>
             </section>
-
         </section>
     </main>
 
@@ -546,7 +521,6 @@
                 </ul>
             </article>
         </section>
-
         <section class="footerBranco">
             <section class="container">
                 <p>&copy; Candleaf! Todos os direitos reservados!</p>
@@ -554,9 +528,6 @@
             </section>
         </section>
     </footer>
-
-
-
 
     <!-- NAO CONECTAR MAIS DE 1 BIBLIOTECA JQUERY!!! -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
