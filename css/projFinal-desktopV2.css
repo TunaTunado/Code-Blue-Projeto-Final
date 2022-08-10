@@ -160,8 +160,8 @@ input[type="url"]:placeholder {
     max-width: 1111px;
     margin: 0 auto;
 }
-
 .container-produtos {width: 1111px}
+
 
 /* header */
 header {
@@ -205,8 +205,6 @@ header article ul {gap: 25px}
     max-height: 780px;
 }
 
-/* AREA DE TESTE PARA ALTERAR COISAS NO TOPO */
-
 .flechinha {display: inline-block}
 
 i {
@@ -228,6 +226,8 @@ i {
 
 main {position: relative}
 
+
+
 /* Conheça nossos produtos */
 .discovery {
     overflow: hidden;
@@ -237,11 +237,7 @@ main {position: relative}
     justify-content: center;
 }
 
-picture>img {
-    width: 100%
-}
-
-
+picture>img {width: 100%}
 .discovery>article {
     align-items: center;
     background: rgba(247, 248, 250, .7);
@@ -297,17 +293,12 @@ footer img {
     gap: 30px;
     justify-content: center;
 }
+.vitrine figure {background: rgba(247, 248, 250, .4)}
 
-.vitrine figure {
-    background: rgba(247, 248, 250, .4);
-}
+
 
 /* Produtos */
-
-html {
-    scroll-behavior: smooth;
-}
-
+html {scroll-behavior: smooth}
 /* Aqui temp products h2, h3, popular h2 e h3 pq usam o mesmo código, dai nao precisa repetir */
 .products h2,
 .products h3,
@@ -316,13 +307,9 @@ html {
     text-align: center;
 }
 
-.products,
-.popular {
-    padding: 90px 0 125px;
-}
+.products, .popular {padding: 90px 0 125px}
 
-.products section article:first-child {margin-bottom: 60px
-}
+.products section article:first-child {margin-bottom: 60px}
 
 .products article>h3 {margin-bottom: 60px}
 
@@ -366,31 +353,24 @@ h3 {
     transform: translate(0, -5%);
     transition: 1.3s ease all;
 }
-
-
 .grid img {background: rgba(238, 238, 238, .0)}
-
 .grid article {padding: 10px 26px 16px}
-
 .grid article p {
     align-items: center;
     display: flex;
 }
-
 .grid article p:first-child {
     color: #1D293F;
     font: 500 16px/28px 'Poppins';
     letter-spacing: -0.9px;
     justify-content: flex-start;
 }
-
 .grid article p:last-child {
     color: #56B280;
     font: 500 20px/28px 'Roboto';
     letter-spacing: -0.9px;
     justify-content: flex-end;
 }
-
 .vitrine article {
     background: #fff;
     left: 0;
@@ -400,13 +380,11 @@ h3 {
     position: absolute;
     margin-bottom: 0px;
 }
-
 .vitrine div {
     position: relative;
     min-height: 198px;
     min-width: 255px;
 }
-
 .vitrine div>a {
     display: block;
     box-shadow: 0px 0px 24px 1px rgb(123 123 123 / 15%);
@@ -415,11 +393,8 @@ h3 {
     transform: translate(0, 0);
     transition: 1s ease all;
 }
+#ver-mais, #ver-menos {display: none}
 
-#ver-mais,
-#ver-menos {
-    display: none;
-}
 
 /* SOBRE */
 .about {
@@ -447,13 +422,7 @@ h3 {
 
 .about figure {margin-top: 13px}
 
-.about ul li {font: 400 16px/29px 'Poppins'
-}
-
-/* .about ul li::before {
-    content: url(../images/checkmark-circle-outline\ 1.png); 
-
-} */
+.about ul li {font: 400 16px/29px 'Poppins'}
 
 .about ul {padding-left: 0}
 
@@ -463,6 +432,8 @@ h3 {
 }
 
 span {font-weight: 500}
+
+
 
 /* TESTEMUNHOS */
 .testimonials {padding: 90px 0 125px}
@@ -493,9 +464,7 @@ span {font-weight: 500}
     margin-top: 6px;
 }
 
-.testimonials {
-    background: rgba(86, 178, 128, 0.1);
-}
+.testimonials {background: rgba(86, 178, 128, 0.1)}
 
 .testimonials>.container section {
     display: flex;
@@ -511,10 +480,10 @@ span {font-weight: 500}
     width: 80%;
 }
 
+
+
 /* Mais Populares */
-.popular {
-    padding-bottom: 70px;
-}
+.popular {padding-bottom: 70px}
 
 footer {
     background: #272727;
@@ -565,7 +534,6 @@ footer li {
     width: 170px;
     margin-right: 13px;
 }
-
 
 footer article:last-child {
     color: #5E6E89;
@@ -624,9 +592,7 @@ footer article:last-child {
         justify-content: space-between;
     }
 
-    .hidden-noMobile {
-        display: none;
-    }
+    .hidden-noMobile {display: none}
 
     header section ul {
         display: flex;
@@ -655,21 +621,15 @@ footer article:last-child {
         display: block;
         position: absolute;
     }
-
     .menu-hamburger {
-        top: 0;
+        top: 75px;
         transition: 1.3s ease all;
-        position: relative;
+        position: fixed;
         display: flex;
         justify-content: flex-start;
     }
-
-    .hidden2 {z-index: -2}
-
     .menu-hamburger ul a,
-    .menu-hamburger li a {
-        font: 400 24px/29px 'Roboto';
-    }
+    .menu-hamburger li a {font: 400 24px/29px 'Roboto'}
 
     .menu-hamburger ul {
         justify-content: left;
@@ -677,9 +637,7 @@ footer article:last-child {
         margin-left: 12%;
         gap: 20px;
     }
-
     .menu-hamburger ul li a {display: inline-block}
-
     .item-1 {
         padding-bottom: 4px;
         display: block;
@@ -706,9 +664,8 @@ footer article:last-child {
 
     /* Qdo ativar o abrir menu o tracinho do meio deve sumir */
     .fechar-menu div:nth-child(3) .hamburger {display: none}
-
     .abrir-menu {display: none}
-
+    .hidden2{z-index: -5;}
     .abrir-menu {
         border: none;
         position: relative;
@@ -728,9 +685,7 @@ footer article:last-child {
 
     nav,
     .logo-desk,
-    .banner {
-        display: none;
-    }
+    .banner {display: none}
 
     nav>ul>li:first-child>a::before {
         content: url(../imagens/setinha-baixo.svg);
@@ -805,9 +760,13 @@ footer article:last-child {
         width: 100%;
     }
 
-    .discovery a {font: 400 21px/24px 'Roboto'}
+    .discovery a {
+        font: 400 21px/24px 'Roboto'
+    }
 
-    .products {padding: 62px 0 72px}
+    .products {
+        padding: 62px 0 72px
+    }
 
     .products .container>a {
         color: white;
@@ -821,7 +780,9 @@ footer article:last-child {
         width: fit-content;
     }
 
-    #ver-menos {display: none}
+    #ver-menos {
+        display: none
+    }
 
     .products .container:last-child {
         display: flex;
@@ -829,7 +790,9 @@ footer article:last-child {
         margin-top: 55px;
     }
 
-    .products .container {display: block}
+    .products .container {
+        display: block
+    }
 
     .grid {
         display: block;
@@ -838,7 +801,9 @@ footer article:last-child {
         margin: 0 15px;
     }
 
-    .grid img {align-items: center}
+    .grid img {
+        align-items: center
+    }
 
     .grid a {
         margin-bottom: 20px;
@@ -902,9 +867,13 @@ footer article:last-child {
         margin: 7px auto 63px;
     }
 
-    .about figure {margin-top: 0}
+    .about figure {
+        margin-top: 0
+    }
 
-    .about h3 {text-align: center}
+    .about h3 {
+        text-align: center
+    }
 
     .about h2 {
         display: flex;
@@ -913,11 +882,13 @@ footer article:last-child {
         width: 100%;
         text-align: center;
     }
+
     #check {
         width: 14px;
         height: 14px;
         margin-right: 10px;
     }
+
     .checkside::before {
         content: url("/Imagens/checkzinho.png");
         background: url("/imagens/checkzinho.png");
@@ -931,9 +902,13 @@ footer article:last-child {
         margin-top: 0;
     }
 
-    .about ul li {margin-bottom: 4px}
+    .about ul li {
+        margin-bottom: 4px
+    }
 
-    .about section:first-child {flex-wrap: wrap}
+    .about section:first-child {
+        flex-wrap: wrap
+    }
 
     .about figure {
         max-width: 100%;
@@ -979,7 +954,9 @@ footer article:last-child {
         flex-direction: column;
     }
 
-    #ver-mais {display: flex}
+    #ver-mais {
+        display: flex
+    }
 
     #popular {
         padding: 0;
@@ -999,12 +976,17 @@ footer article:last-child {
         justify-content: space-between;
         padding: 0 0;
     }
-    footer>.container:first-child p {width: 100%}
+
+    footer>.container:first-child p {
+        width: 100%
+    }
+
     footer section>article:first-child {
         max-width: 100%;
         margin: 0 0;
         margin-left: 15px;
     }
+
     footer ul {
         align-items: left;
         display: grid;
@@ -1015,12 +997,25 @@ footer article:last-child {
         padding-top: 0;
         padding-bottom: 0;
     }
-    footer ul ul {padding-left: 0}
+
+    footer ul ul {
+        padding-left: 0
+    }
+
     footer li ul li {
         padding-top: 20px;
         margin-left: 0px;
     }
-    footer li:nth-child(1) {order: 0}
-    footer li:nth-child(2) {order: 3}
-    footer li>:nth-child(3) {order: 2}
+
+    footer li:nth-child(1) {
+        order: 0
+    }
+
+    footer li:nth-child(2) {
+        order: 3
+    }
+
+    footer li>:nth-child(3) {
+        order: 2
+    }
 }
