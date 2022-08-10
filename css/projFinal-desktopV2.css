@@ -477,10 +477,11 @@ span {font-weight: 500}
 }
 
 
-
 /* Mais Populares */
 .popular {padding-bottom: 70px}
 
+
+/* RODAPÉ */
 footer {
     background: #272727;
     padding: 60px 0 0;
@@ -688,9 +689,8 @@ footer article:last-child {
         transition: .5s ease all;
         margin-left: -13%;
     }
-
     .abrir::before {transform: rotate(-180deg)}
-
+    /* NAV do header */
 
     nav {
         display: block;
@@ -717,8 +717,9 @@ footer article:last-child {
     }
 
     .banner-mobile {
-        max-width: 100%;
-        max-height: 780px;
+        min-width: 100%;
+        /* max-height: 780px; */
+        overflow: hidden;
     }
 
     .usuarioMobile {
@@ -781,6 +782,7 @@ footer article:last-child {
         display: none
     }
 
+    /* produtos */
     .products .container:last-child {
         display: flex;
         justify-content: center;
@@ -847,6 +849,7 @@ footer article:last-child {
         display: none;
     }
 
+    /* sobre */
     .about a {
         display: flex;
         margin-bottom: 0;
@@ -919,6 +922,8 @@ footer article:last-child {
         align-items: center;
         margin: auto;
     }
+
+/* testemunhos */
 
     .testimonials>.container section {
         gap: 22px;
